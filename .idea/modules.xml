@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/hello-scala/hello-scala.iml" filepath="$PROJECT_DIR$/hello-scala/hello-scala.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scala-syntax/scala-syntax.iml" filepath="$PROJECT_DIR$/scala-syntax/scala-syntax.iml" />
+    </modules>
+  </component>
+</project>
