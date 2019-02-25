@@ -1,4 +1,4 @@
-package com.blue.example
+package com.blue.example.list
 
 /**
   * @author shenjie
@@ -26,16 +26,16 @@ package com.blue.example
 //          ┗━┻━┛   ┗━┻━┛
 
 object ListPractice {
-  def main(args : Array[String]): Unit ={
+  def main(args: Array[String]): Unit = {
     //创建一个List
-    val lst0 = List(1,7,9,8,0,3,5,4,6,2)
+    val lst0 = List(1, 7, 9, 8, 0, 3, 5, 4, 6, 2)
     //将lst0中每个元素乘以10后生成一个新的集合
     val lst1 = lst0.map(_ * 10)
     println(lst1)
 
     //将lst0中的偶数取出来生成一个新的集合
 
-    val lst2 = lst0.filter( _ % 2 == 0)
+    val lst2 = lst0.filter(_ % 2 == 0)
     println(lst2)
 
     //将lst0排序后生成一个新的集合
@@ -61,7 +61,7 @@ object ListPractice {
 
     val lines = List("hello tom hello jerry", "hello jerry", "hello kitty")
     //先按空格切分，在压平
-//    val lst8 = lines.map(_.split(" ")).flatten
+    //    val lst8 = lines.map(_.split(" ")).flatten
     val lst8 = lines.flatMap(_.split(" "))
     println(lst8)
 
@@ -75,27 +75,27 @@ object ListPractice {
 
     //将非特定顺序的二元操作应用到所有元素
 
-    val sum3 = lst0.reduce( (x,y) => x + y )
+    val sum3 = lst0.reduce((x, y) => x + y)
     println(sum3)
 
     //安装特点的顺序
-    val sum4 = lst0.reduceLeft( _ + _ )
+    val sum4 = lst0.reduceLeft(_ + _)
     println(sum4)
 
     //折叠：无初始值（无特定顺序）
-    val sum5 = lst0.fold(0)(_+_)
+    val sum5 = lst0.fold(0)(_ + _)
     println(sum5)
 
     //折叠：有初始值（无特定顺序）
-    val sum6 = lst0.fold(10)(_+_)
+    val sum6 = lst0.fold(10)(_ + _)
     println(sum6)
 
     //折叠：无初始值（有特定顺序）
-    val sum7 = lst0.foldLeft(0)(_+_)
+    val sum7 = lst0.foldLeft(0)(_ + _)
     println(sum7)
 
     //折叠：有初始值（有特定顺序）
-    val sum8 = lst0.par.foldLeft(10)(_+_)
+    val sum8 = lst0.par.foldLeft(10)(_ + _)
     println(sum8)
 
 
@@ -104,8 +104,8 @@ object ListPractice {
     val arr1 = arr.flatten
     println(arr1)
 
-    val l1 = List(5,6,4,7)
-    val l2 = List(1,2,3,4)
+    val l1 = List(5, 6, 4, 7)
+    val l2 = List(1, 2, 3, 4)
     //求并集
     println(l1 union l2)
 
